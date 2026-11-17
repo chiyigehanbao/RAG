@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --nc-navy: #0b3d5c;
+  --nc-navy-deep: #072a40;
+  --nc-teal: #2dd4bf;
+  --nc-teal-dim: #14b8a6;
+  --nc-surface: #ffffff;
+  --nc-bg: #f7f8fa;
+  --nc-bg-warm: #f3f5f8;
+  --nc-muted: #64748b;
+  --nc-border: #e2e8f0;
+  --nc-shadow: 0 4px 24px -4px rgba(11, 61, 92, 0.08);
+  --nc-shadow-lg: 0 12px 40px -8px rgba(11, 61, 92, 0.12);
+  --font-display: "Outfit", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-body: "DM Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--nc-bg);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 页面背景光晕 */
+.nc-page-bg {
+  background-color: var(--nc-bg);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(45, 212, 191, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(11, 61, 92, 0.06), transparent);
+}
+
+/* 入场动画 */
+@keyframes nc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nc-animate-in {
+  animation: nc-fade-up 0.5s ease-out both;
+}
+
+.nc-stagger-1 { animation-delay: 0.05s; }
+.nc-stagger-2 { animation-delay: 0.12s; }
+.nc-stagger-3 { animation-delay: 0.19s; }
+.nc-stagger-4 { animation-delay: 0.26s; }
+
+@keyframes nc-msg-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nc-msg-enter {
+  animation: nc-msg-in 0.22s ease-out both;
+}
+
+@keyframes nc-pulse-dot {
+  0%, 80%, 100% { opacity: 0.3; transform: scale(0.85); }
+  40% { opacity: 1; transform: scale(1); }
+}
+
+.nc-loading-dot {
+  animation: nc-pulse-dot 1.2s ease-in-out infinite;
+}
+.nc-loading-dot:nth-child(2) { animation-delay: 0.15s; }
+.nc-loading-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes nc-trace-flash {
+  0% { background-color: rgba(45, 212, 191, 0.25); }
+  100% { background-color: transparent; }
+}
+
+.nc-trace-flash {
+  animation: nc-trace-flash 0.8s ease-out;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-nc {
+  font-family: var(--font-mono);
+}

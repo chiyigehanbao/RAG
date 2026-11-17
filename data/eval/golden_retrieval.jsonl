@@ -1,0 +1,16 @@
+{"question": "LangGraph 有哪些节点", "expected_sources": ["arch/langgraph"], "corpus": "arch"}
+{"question": "Agent 流程里 rewrite 什么时候触发", "expected_sources": ["arch/langgraph"], "corpus": "arch"}
+{"question": "Embedding 用的是什么模型", "expected_sources": ["arch/config", "arch/rag-pipeline"], "corpus": "arch"}
+{"question": "Chroma 向量库存在哪里", "expected_sources": ["arch/config", "arch/rag-pipeline"], "corpus": "arch"}
+{"question": "RAG 检索流程是怎样的", "expected_sources": ["arch/rag-pipeline"], "corpus": "arch"}
+{"question": "classify 节点做什么", "expected_sources": ["arch/langgraph", "arch/overview"], "corpus": "arch"}
+{"question": "项目后端技术栈有哪些", "expected_sources": ["arch/overview"], "corpus": "arch"}
+{"question": "LangChain 在本项目里怎么用", "expected_sources": ["arch/langchain-usage"], "corpus": "arch"}
+{"question": "企业版如何计费", "expected_sources": ["faq/account", "wiki/billing"], "corpus": "business"}
+{"question": "如何重置密码", "expected_sources": ["faq/account"], "corpus": "business"}
+{"question": "部署需要哪些环境变量", "expected_sources": ["wiki/deployment"], "corpus": "business"}
+{"question": "权限角色有哪些", "expected_sources": ["wiki/permissions"], "corpus": "business"}
+{"question": "产品有哪些集成能力", "expected_sources": ["product_manual/integrations"], "corpus": "business"}
+{"question": "常见故障怎么排查", "expected_sources": ["faq/troubleshooting"], "corpus": "business"}
+{"question": "NovaCloud 产品功能概览", "expected_sources": ["product_manual/overview"], "corpus": "business"}
+{"question": "助手设定页能改什么", "expected_sources": ["arch/config", "arch/faq"], "corpus": "arch"}
