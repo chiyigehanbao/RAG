@@ -6,6 +6,15 @@ RAG 架构助手是一套带执行链路展示的知识库问答应用。它以�
 
 项目将 React + TypeScript 界面、FastAPI API、混合检索、向量存储与会话记录组织为一套可本地运行的工程，适合观察 RAG 从问题输入到最终回答的完整过程。
 
+## 界面预览
+
+<p>
+  <img src="docs/images/overview.png" width="900" alt="项目界面">
+  <img src="docs/images/detail.png" width="900" alt="功能界面">
+</p>
+
+本地前端截图，使用默认设置与空会话列表；未执行真实检索或模型推理。
+
 ## 可以做什么
 
 - **问项目架构**：例如有哪些 Agent 节点、何时触发 rewrite、Embedding 如何配置。
